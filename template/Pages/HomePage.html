@@ -1,7 +1,15 @@
 {%extends '../Base.html'%} 
 {%load static%}
 {% block body %}
-<div class="h-[900px] bg-[url('../../static/images/home1.jpg')] bg-center bg-cover bg-no-repeat my-30">
+{%block style%}
+    <style>
+        #home{
+            background:url("{% static 'images/home1.jpg' %}") no-repeat center ;
+            background-size: cover;
+        }
+    </style>
+{%endblock%}
+<div id="home" class="h-[900px]  bg-center bg-cover bg-no-repeat my-30">
     <div class="md:grid  pt-20">
         
         <div class="">

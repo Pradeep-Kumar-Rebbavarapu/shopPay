@@ -1,0 +1,32 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>{% block title%}{%endblock%}</title>
+    {% block style %}
+    {% endblock %}
+</head>
+
+<body>
+    <div class="h-full">
+        <div class="absolute w-full">
+            {% include "components/Navbar.html"%}
+        </div>
+        {% block body %}
+        {% endblock %}
+        {%include 'components/Footer.html'%}
+    </div>
+    
+</body>
+<script src={% static 'js/jquery.js' %}></script>
+<script src={% static 'js/popper.js' %}></script>
+
+</html>

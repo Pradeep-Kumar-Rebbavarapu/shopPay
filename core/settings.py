@@ -143,3 +143,4 @@ NPM_BIN_PATH = r"C:\Program Files\nodejs\npm.cmd"
 
 
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+WHITENOISE_MANIFEST_STRICT = False
